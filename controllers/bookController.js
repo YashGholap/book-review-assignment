@@ -27,7 +27,7 @@ exports.getBooks = (req, res) =>{
 
     if(author){
         conditions.push(`author LIKE ?`);
-        params.push(`${author}%`);
+        params.push(`%${author}%`);
     }
     if(genre){
         conditions.push(`genre = ?`);
