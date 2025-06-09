@@ -1,13 +1,18 @@
+require('dotenv').config();
 express = require('express');
 
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 4000;
+app.use(express.json());
 
 
-app.get('/', (req, res)=>{
-    res.send("<h1> Hello there!</h1>");
-})
+
+
+const authRoutes = require('./routes/authRoutes');
+app.use('/api', authRoutes);
+
+
 
 app.listen(PORT, (err)=>{
     if(!err){
