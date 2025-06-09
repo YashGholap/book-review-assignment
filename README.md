@@ -1,10 +1,10 @@
-# 📚 Book Review API (Node.js + Express + SQLite)
+# Book Review API (Node.js + Express + SQLite)
 
 A simple RESTful API that allows users to sign up, login, add books, and post reviews — with JWT-based authentication.
 
 ---
 
-## 🚀 Features
+## Features
 
 - User Registration and Login (JWT Auth)
 - Add/Get Books with filters and pagination
@@ -15,7 +15,7 @@ A simple RESTful API that allows users to sign up, login, add books, and post re
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - Node.js
 - Express.js
@@ -26,7 +26,7 @@ A simple RESTful API that allows users to sign up, login, add books, and post re
 
 ---
 
-## 📦 Project Setup
+## Project Setup
 
 ### 1. Clone the repo
 ```bash
@@ -47,20 +47,14 @@ JWT_SECRET=yourSecretKeyHere
 
 ### 4. Run the project
 ```bash
-node server.js
-```
-
-### 5. Initialize DB
-If using `schema.sql`, run:
-```bash
-sqlite3 db.sqlite < schema.sql
+npm start
 ```
 
 ---
 
-## 🔍 API Endpoints
+## API Endpoints
 
-### ✅ Auth
+### Auth
 
 #### POST /api/signup
 ```json
@@ -81,7 +75,7 @@ sqlite3 db.sqlite < schema.sql
 
 ---
 
-### 📚 Books
+### Books
 
 #### POST /api/books (Auth required)
 Headers: `Authorization: Bearer <token>`
@@ -99,7 +93,7 @@ Headers: `Authorization: Bearer <token>`
 
 ---
 
-### ✍️ Reviews
+### Reviews
 
 #### POST /api/books/:id/reviews (Auth required)
 ```json
@@ -121,13 +115,13 @@ Headers: `Authorization: Bearer <token>`
 
 ---
 
-### 🔍 Search
+### Search
 
 #### GET /api/search?title=atomic&author=clear
 
 ---
 
-## 🧠 Design Decisions
+## Design Decisions
 
 - SQLite chosen for simplicity (easily replaceable with Postgres or MongoDB)
 - Passwords hashed with `bcrypt`
@@ -136,7 +130,7 @@ Headers: `Authorization: Bearer <token>`
 
 ---
 
-## 🗄️ Database Schema
+## Database Schema
 
 ```sql
 -- Users
@@ -169,6 +163,6 @@ CREATE TABLE reviews (
 
 ---
 
-## 👨‍💻 Author
+## Postman Collection
 
-Yash Gholap – [GitHub](https://github.com/YashGholap)
+[Download Collection (JSON)](https://github.com/YashGholap/book-review-assignment/blob/develop/Book_Review.postman_collection.json)
