@@ -10,7 +10,11 @@ app.use(express.json());
 
 
 const authRoutes = require('./routes/authRoutes');
+const bookRoutes = require('./routes/bookRoutes');
+
+
 app.use('/api', authRoutes);
+app.use('/api', bookRoutes);
 
 
 
