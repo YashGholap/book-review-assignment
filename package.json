@@ -1,0 +1,23 @@
+{
+  "name": "book_review_assignment",
+  "version": "1.0.0",
+  "description": "Backend API's for book review program created using Node and Express JS as an assignment for Position of Junior Backend Developer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YashGholap/book-review-assignment.git"
+  },
+  "author": "Yash Gholap",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YashGholap/book-review-assignment/issues"
+  },
+  "homepage": "https://github.com/YashGholap/book-review-assignment#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
